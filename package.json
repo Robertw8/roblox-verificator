@@ -1,0 +1,36 @@
+{
+  "name": "roblox-verificator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Resumable human-in-the-loop Roblox age-verification queue worker",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "csv-parse": "^7.0.2",
+    "csv-stringify": "^6.6.0",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.2",
+    "playwright": "^1.62.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

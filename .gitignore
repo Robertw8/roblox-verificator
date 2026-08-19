@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+
+# Runtime data can contain credentials and personal verification results.
+data/accounts.csv
+data/results.csv
+data/progress.json
+data/*.tmp
+src/data/
+
+# Browser diagnostics may contain account information.
+screenshots/*
+!screenshots/.gitkeep
+traces/*
+!traces/.gitkeep
+
+playwright-report/
+test-results/
+*.log
+.DS_Store
